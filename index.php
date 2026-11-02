@@ -11,12 +11,12 @@
         <div class="outer-container">
         <h1>Login</h1>
         <div class="inner-container">
-            <form>
+            <form action="login.php" method="POST">
                 <label>User Email: </label>
-                <input type="email">
+                <input type="email" name="email" required>
                 <br><br>
                 <label>Password: </label>
-                <input type="password">
+                <input type="password" name="password" required>
                 <br><br>
                 <input type="submit" value="Log In">
             </form>
