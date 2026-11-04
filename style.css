@@ -1,74 +1,44 @@
-body {
+.left-box {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
 }
 
-.inner-container {
-  padding: 30px;
-  border-radius: 10px;
-  text-align: right;
-  margin-bottom: 20px;
+.first-inner-lbox {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.second-inner-lbox {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-.outer-container {
-  padding: 40px;
-  border-radius: 10px;
-}
-
-.outer-container h1 {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-label {
-  margin: 5px;
-}
-
-input[type="password"],
-input[type="email"] {
-  height: 25px;
-  width: 200px;
-  margin-left: 25px;
-  border: 0;
-  border-radius: 3px;
-  background-color: #cbe1dc;
-}
-input[type="submit"] {
-  height: 25px;
+.talisay {
   width: 80px;
-  border: 0;
-  border-radius: 2px;
-  font-weight: bold;
-  color: #464e65;
-  background-color: #f68c7e;
+  height: 80px;
+}
+.locate {
+  width: 50px;
+  height: 50px;
 }
 
-input[type="submit"]:hover {
-  background-color: #db7163;
-}
-a:hover {
-  color: #db7163;
-}
-
-/*======================================*/
-
-body {
-  background: linear-gradient(to bottom, #efe6d5, #cbe1dc);
-  color: #464e65;
-  /* background: linear-gradient(to right, #10b981, #172d64); */
-}
-.outer-container {
-  background-color: #9dbeb7;
-}
-.inner-container {
-  font-weight: bold;
+.right-box {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-a {
-  color: #f68c7e;
+.first-inner-rbox {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.second-inner-rbox {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
