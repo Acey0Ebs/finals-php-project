@@ -210,6 +210,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #001b92;
   cursor: pointer;
+  animation: softPulse 2s ease-in-out infinite;
 }
 
 .second-inner-rbox > p {
@@ -217,3 +218,19 @@ input[type="submit"]:hover {
   margin: 0;
   margin-top: 13.5px;
 }
+
+/* 1. Define the animation stages */
+@keyframes softPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* slightly scales up */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 2. Apply it to your element */
+/* shorthand: name | duration | timing function | loop count */

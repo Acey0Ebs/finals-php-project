@@ -50,7 +50,8 @@
 
         <div><hr></div>
         <div class="third-box">
-            Don't have an account? <a href="register.php">Sign up.</a>
+            Don't have an account?
+            <a href="signup.php"> Sign up.</a>
         </div>
     </div>
     </div>
