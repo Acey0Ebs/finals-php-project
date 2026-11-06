@@ -4,27 +4,38 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to top, #1d47ff, #a5ccff);
+  background: linear-gradient(to bottom, #1d47ff, #001b92);
 }
 
 .main-container {
-  border: 2px solid blue;
   display: flex;
   padding: 13.5px;
 
   /*Image Overlay BG*/
 }
 .image-container-bg {
-  border: 2px solid green;
-  background-image: url("assets/home.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
+  position: relative;
   display: inline-flex;
   width: fit-content;
   height: fit-content;
   box-sizing: border-box;
+  isolation: isolate;
+
+  margin-right: 50.5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.image-container-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: -1;
 }
 
 /* display: inline-flex makes the background wrapper size itself around its child.
@@ -40,23 +51,21 @@ box-sizing: border-box makes padding and borders count toward the element's decl
 /*========================================*/
 
 .left-box {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   padding: 24.3px;
-  margin-right: 67.5px;
+
+  text-align: center; /*Centers the text inside the left box*/
 
   box-sizing: border-box;
 }
 
 .first-inner-lbox {
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
 }
 
 .second-inner-lbox {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -64,7 +73,6 @@ box-sizing: border-box makes padding and borders count toward the element's decl
 .talisay {
   width: 135px;
   height: 135px;
-  border: 1px solid black;
 }
 .locate {
   width: 54px;
@@ -75,21 +83,23 @@ box-sizing: border-box makes padding and borders count toward the element's decl
 /*========================================*/
 
 .right-box {
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 24.3px;
   margin-left: 67.5px;
+  margin-bottom: 50px;
+  margin-top: 35.25px;
 }
 
 .first-inner-rbox {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .second-inner-rbox {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,49 +109,59 @@ box-sizing: border-box makes padding and borders count toward the element's decl
 .third-box {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 20.25px;
 }
 
 /*========================================*/
 
 h1 {
   font-size: 40.5px;
-  border: 1px solid black;
+
   margin: 0;
   margin-top: 20.25px;
   margin-left: 13.5px;
   font-weight: bolder;
   letter-spacing: 0.135em;
+
+  color: white;
 }
 .inner-filbox > p {
   font-size: 20.25px;
-  border: 1px solid black;
+
   margin: 0;
   margin-bottom: 20.25px;
   margin-left: 13.5px;
   letter-spacing: 0.27em; /*Spreads the font text cleanly*/
+
+  color: white;
 }
 h2 {
   font-size: 74.25px;
-  border: 1px solid black;
+
   margin-top: 67.5px;
   margin-bottom: 0;
   letter-spacing: 0.135em;
+
+  color: white;
 }
 h3 {
   font-size: 59.4px;
-  border: 1px solid black;
+
   margin-top: 13.5px;
   letter-spacing: 0.27em;
   margin-bottom: 0;
+
+  color: #fff600;
 }
 .second-inner-lbox > p {
-  border: 1px solid black;
   margin: 0;
   letter-spacing: 0.135em;
   padding-top: 27px;
+
+  color: white;
 }
 .first-inner-rbox > p {
-  border: 1px solid black;
   margin: 0;
   padding-top: 27px;
   text-align: center;
@@ -171,13 +191,29 @@ input[type="email"] {
   margin-top: 40.5px;
   width: 351px;
   height: 33.75px;
+  text-align: center;
 }
 input[type="password"] {
   width: 351px;
   height: 33.75px;
+  text-align: center;
 }
 input[type="submit"] {
   width: 216px;
   height: 40.5px;
   font-size: 16.2px;
+  background-color: #1d47ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+input[type="submit"]:hover {
+  background-color: #001b92;
+  cursor: pointer;
+}
+
+.second-inner-rbox > p {
+  border: 1px solid red;
+  margin: 0;
+  margin-top: 13.5px;
 }

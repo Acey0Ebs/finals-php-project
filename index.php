@@ -33,14 +33,21 @@
         </div>
         <div class="second-inner-rbox">
             <form>
-            <input type="email" name="email" required>
+            <input type="email" name="email" placeholder="Enter Email Address" required>
             <br><br>
 
-            <input type="password" name="password" required>
+            <input type="password" name="password" placeholder="Enter User Password" required>
             <br><br>
             <input type="submit" value="Login"></input>
         </form>
+
+
+        <!-- Echo Goes Here For the Invalid Entry -->
+        <p style="color: red;"></p>
         </div>
+
+
+
         <div><hr></div>
         <div class="third-box">
             Don't have an account? <a href="register.php">Sign up.</a>
