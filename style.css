@@ -85,7 +85,7 @@ box-sizing: border-box makes padding and borders count toward the element's decl
 .right-box {
   border: 1px solid white;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   padding: 24.3px;

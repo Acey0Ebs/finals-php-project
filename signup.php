@@ -69,6 +69,14 @@
         <br>
         <input type="text" placeholder="Enter Your Full Name" class="input-fields">
         <br>
+        <label class="form-labels">Birthdate</label>
+        <br>
+        <input type="date" placeholder="Enter Your Birthdate" class="input-fields">
+        <br>
+        <label class="form-labels">Contact Number</label>
+        <br>
+        <input type="number" placeholder="Enter Your Contact Number" class="input-fields">
+        <br>
         <label class="form-labels">Email Address</label>
         <br>
         <input type="email" placeholder="Enter your Email Address" class="input-fields">
@@ -92,7 +100,8 @@
                 <input type="submit" value="Create Account">
             </div>
 
-        <div><hr></div>
+
+
         <div class="third-box">
             Already have an account?
             <a href="index.php"> Login.</a>
