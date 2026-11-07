@@ -2,46 +2,170 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* background: linear-gradient(to bottom, #1d47ff, #001b92); */
+  background: linear-gradient(to bottom, #1d47ff, #001b92);
+  margin: 0;
 }
 
-.left-container {
-  border: 1px solid black;
+/* .left-container {
+
+} */
+.image-container-bg {
+  position: relative;
+  display: inline-flex;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+  isolation: isolate;
+
+  margin-right: 70.5px;
+}
+
+.image-container-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.first-inner-lbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.second-inner-lbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.talisay {
+  width: 135px;
+  height: 135px;
+}
+
+h1 {
+  font-size: 40.5px;
+
+  margin: 0;
+  margin-top: 20.25px;
+  margin-left: 13.5px;
+  font-weight: bolder;
+  letter-spacing: 0.135em;
+
+  color: white;
+}
+
+.inner-filbox > p {
+  font-size: 20.25px;
+  margin: 0;
+  margin-bottom: 20.25px;
+  margin-left: 13.5px;
+  letter-spacing: 0.27em;
+  color: white;
+}
+
+h2 {
+  font-size: 74.25px;
+  margin-top: 67.5px;
+  margin-bottom: 0;
+  letter-spacing: 0.135em;
+  color: white;
+}
+
+h3 {
+  font-size: 59.4px;
+  margin-top: 13.5px;
+  letter-spacing: 0.27em;
+  margin-bottom: 0;
+  color: #fff600;
+}
+
+.second-inner-lbox > p {
+  margin: 0;
+  letter-spacing: 0.135em;
+  padding-top: 27px;
+  color: white;
+}
+
+#lmao {
+  font-size: 16.2px;
+  padding: 2.7px;
+  margin: 0;
 }
 
 .right-container {
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+
+  width: 540px;
+  max-height: 85vh;
   padding: 30px;
+  box-sizing: border-box;
+
+  overflow-y: auto;
+}
+.header-p {
+  font-size: 27px;
+  font-weight: bolder;
+  padding: 13.5px;
+  margin: 0;
+}
+
+.header2 {
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .right-image-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .locate {
   width: 54px;
   height: 54px;
   align-self: center;
-  border: 1px solid black;
 }
 
 /*===================================*/
 
 .right-image-box > p {
-  border: 1px solid black;
 }
 
 /*===================================*/
 
 .form-box {
-  border: 1px solid black;
-  width: 480px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.inner-form-box {
+  width: 100%;
 }
 
 /*===================================*/
@@ -49,27 +173,25 @@ body {
 .selection-box-center {
   display: flex;
   justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .selection-cards {
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 12px;
+  box-sizing: border-box;
 }
 
-.select-card-left {
-  cursor: pointer;
-  border: 1px solid purple;
-  margin-right: 10px;
-
-  /* padding: 10px; */
-}
+.select-card-left,
 .select-card-right {
+  display: block;
+  min-width: 0;
+  width: 100%;
   cursor: pointer;
-  border: 1px solid purple;
-  margin-left: 10px;
-
-  /* padding: 10px; */
+  box-sizing: border-box;
 }
 
 .hidden-radio {
@@ -80,19 +202,25 @@ body {
 }
 
 .card-content {
-  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+
   border: 2px solid black;
   border-radius: 5px;
   background-color: white;
   text-align: center;
-  height: 28px;
-  width: 220px;
 }
 
 .card-content > p {
   margin: 0;
-
   color: #333;
+  overflow-wrap: anywhere;
 }
 
 .hidden-radio:checked + .card-content {
@@ -112,7 +240,6 @@ body {
 
 .form-labels {
   font-weight: 600;
-  border: 1px solid black;
 }
 .input-fields {
   box-sizing: border-box;
@@ -122,7 +249,6 @@ body {
   margin-bottom: 10px;
 }
 #owo {
-  border: 1px solid black;
   margin: 0;
   font-size: 12px;
   margin-bottom: 15px;
@@ -130,12 +256,31 @@ body {
 }
 
 .button-center {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
-input [type="submit"] {
-  padding: 20px;
+input[type="submit"] {
+  width: 216px;
+  height: 40.5px;
+  font-size: 16.2px;
+  background-color: #1d47ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+.third-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
-  margin: 20px;
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13.5px;
+  gap: 50px;
 }

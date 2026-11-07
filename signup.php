@@ -7,15 +7,30 @@
     <link rel="stylesheet" href="styleSignUp.css">
 </head>
 <body>
-    <div class="left-container">
-    A
+    <div class="main-container">
+        <div class="image-container-bg">
+            <div class="left-box">
+        <div class="first-inner-lbox">
+            <img src="assets/talisay.png" alt="Logo" class="talisay">
+        <div class="inner-filbox">
+            <h1>TALISAY CITY</h1>
+        <p><i>Boarding House Inquiry System</i></p>
+        </div>
+        </div>
+        <div class="second-inner-lbox">
+            <h2>Find your</h2>
+            <h3>perfect stay.</h3>
+            <p><i>Your home away from home starts here.</i></p>
+            <p id="lmao"><i>Sponsored by Julian's Canton.</i></p>
+        </div>
     </div>
+        </div>
 
     <div class="right-container">
         <div class="right-image-box">
             <img src="assets/locate.png" alt="locate" class="locate">
-            <p>Create An Account</p>
-            <p>Find your home or manage your boarding house.</p>
+            <p class="header-p">Create An Account</p>
+            <p class="header2">Find your home or manage your boarding house.</p>
         </div>
 
         <div class="form-box">
@@ -82,7 +97,6 @@
             Already have an account?
             <a href="index.php"> Login.</a>
         </div>
-    </div>
     </div>
 </body>
 </html>
