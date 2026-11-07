@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+/*========================================*/
+
+.header {
+  border: 2px solid black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 2px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.talisay-text {
+  border: 2px solid blue;
+  margin-left: 20px;
+}
+.talisay-text > h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.talisay-text > p {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+}
+
+.header-text {
+  border: 2px solid blue;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text > p {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+
+.header-notifs {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#notif {
+  width: 35px;
+  height: 35px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  margin: 0;
+}
+
+.logo-container-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+.logo-profile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 0;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/*========================================*/
+/* STRICTLY DO NOT TOUCH THE CODE ABOVE THIS LINE */
+
+.first-container {
+  border: 1px solid black;
+  margin: 25px;
+  width: auto;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 20px;
+}
+.random-rectangle {
+  border: 1px solid black;
+  width: 3.5px;
+  height: 90px;
+  border-radius: 20px;
+}
+.first-container-text {
+  border: 1px solid black;
+  margin-left: 20px;
+}
