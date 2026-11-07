@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="styleSignUp.css">
 </head>
 <body>
-    HAHAHA Hello World! This is the sign up page.
+    <div class="left-container">
+    A
+    </div>
+
+    <div class="right-container">
+        <div class="right-image-box">
+            <img src="assets/locate.png" alt="locate" class="locate">
+            <p>Create An Account</p>
+            <p>Find your home or manage your boarding house.</p>
+        </div>
+
+        <div class="form-box">
+            <p>I am a...</p>
+
+<!-- ========================================================== -->
+
+            <div class="selection-box-center">
+
+                <div class="selection-cards">
+
+                <label class="select-card-left">
+                    <input type="radio" name="plan" value="basic" class="hidden-radio">
+                <div class="card-content">
+                    <p><b>Boarder</b></p>
+                </div>
+                </label>
+
+                <label class="select-card-right">
+                    <input type="radio" name="plan" value="pro" class="hidden-radio">
+                <div class="card-content">
+                    <p><b>Landlady/Landlord</b></p>
+                </div>
+                </label>
+                
+            </div>
+
+            </div>
+
+<!-- ========================================================== -->
+
+<br>
+
+        <div class="inner-form-box">
+        <label class="form-labels">Full Name</label>
+        <br>
+        <input type="text" placeholder="Enter Your Full Name" class="input-fields">
+        <br>
+        <label class="form-labels">Email Address</label>
+        <br>
+        <input type="email" placeholder="Enter your Email Address" class="input-fields">
+        <br>
+        <label class="form-labels">Password</label>
+        <br>
+        <input type="password" placeholder="Create Password" class="input-fields">
+        <p id="owo">Use at least 8 Characters</p>
+        <label class="form-labels">Confirm Password</label>
+        <br>
+        <input type="password" placeholder="Re-enter Your Password" class="input-fields">
+        </div>
+
+        <div class="terms-of-service">
+            <p>By creating an account, you agree to our <br><a href="terms_of_service.html">Terms of Service</a> and <a href="terms_of_service.html">Privacy Policy</a></p>
+        </div>
+
+        </div>
+
+        <div class="button-center">
+                <input type="submit" value="Create Account">
+            </div>
+
+        <div><hr></div>
+        <div class="third-box">
+            Already have an account?
+            <a href="index.php"> Login.</a>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

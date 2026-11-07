@@ -21,13 +21,19 @@
             <h2>Find your</h2>
             <h3>perfect stay.</h3>
             <p><i>Your home away from home starts here.</i></p>
-            <p id="lmao"><i>Powered by Julian's Canton.</i></p>
+            <p id="lmao"><i>Sponsored by Julian's Canton.</i></p>
         </div>
     </div>
         </div>
+
+<!-- =============================================================================================== -->
+
+    <!-- SA SULOD SANG INI NGA SECTION ANG FORM FOR THE LOG IN
+    [ 'processLogIn.php' ] LANG ANG INAME PARA SA LOGIC SANG LOGIN -->
+
     <div class="right-box">
         <div class="first-inner-rbox">
-            <img src="assets/locate.png" alt="User Icon" class="locate">
+            <img src="assets/locate.png" alt="Locate" class="locate">
             <p id="lmao2">Welcome!</p>
             <p>Login to find the best boarding house of your choice!</p>
         </div>
@@ -41,12 +47,13 @@
             <input type="submit" value="Login"></input>
         </form>
 
+<!-- =============================================================================================== -->
 
         <!-- Echo Goes Here For the Invalid Entry -->
         <p style="color: red;"></p>
         </div>
 
-
+<!-- =============================================================================================== -->
 
         <div><hr></div>
         <div class="third-box">
