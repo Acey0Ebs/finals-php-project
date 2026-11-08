@@ -305,3 +305,15 @@ input[type="submit"]:hover {
   cursor: pointer;
   animation: softPulse 2s ease-in-out infinite;
 }
+
+.landlord-fields {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.landlord-fields h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}

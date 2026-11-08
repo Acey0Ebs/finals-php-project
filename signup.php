@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styleSignUp.css">
+    <script src="signup.js" defer></script>
 </head>
 <body>
     <div class="main-container">
@@ -33,72 +34,110 @@
             <p class="header2">Find your home or manage your boarding house.</p>
         </div>
 
-        <div class="form-box">
-            <p>I am a...</p>
+        <form action="process_signup.php" method="POST">
 
-<!-- ========================================================== -->
+    <!-- ACCOUNT TYPE -->
+    <p>I am a...</p>
 
-            <div class="selection-box-center">
+    <div class="selection-box-center">
+        <div class="selection-cards">
 
-                <div class="selection-cards">
+            <label class="select-card-left">
+                <input type="radio"
+                       name="account_type"
+                       value="boarder"
+                       class="hidden-radio"
+                       checked>
 
-                <label class="select-card-left">
-                    <input type="radio" name="plan" value="basic" class="hidden-radio">
                 <div class="card-content">
                     <p><b>Boarder</b></p>
                 </div>
-                </label>
+            </label>
 
-                <label class="select-card-right">
-                    <input type="radio" name="plan" value="pro" class="hidden-radio">
+            <label class="select-card-right">
+                <input type="radio"
+                       name="account_type"
+                       value="landlord"
+                       class="hidden-radio">
+
                 <div class="card-content">
                     <p><b>Landlady/Landlord</b></p>
                 </div>
-                </label>
-                
-            </div>
+            </label>
 
-            </div>
+        </div>
+    </div>
 
-<!-- ========================================================== -->
+    <!-- COMMON INFORMATION -->
+    <div class="inner-form-box">
 
-<br>
-
-        <div class="inner-form-box">
         <label class="form-labels">Full Name</label>
-        <br>
-        <input type="text" placeholder="Enter Your Full Name" class="input-fields">
-        <br>
+        <input type="text" name="full_name"
+               placeholder="Enter Your Full Name"
+               class="input-fields" required>
+
         <label class="form-labels">Birthdate</label>
-        <br>
-        <input type="date" placeholder="Enter Your Birthdate" class="input-fields">
-        <br>
+        <input type="date" name="birthdate"
+               class="input-fields" required>
+
         <label class="form-labels">Contact Number</label>
-        <br>
-        <input type="number" placeholder="Enter Your Contact Number" class="input-fields">
-        <br>
+        <input type="tel" name="contact_number"
+               placeholder="Enter Contact Number"
+               class="input-fields" required>
+
         <label class="form-labels">Email Address</label>
-        <br>
-        <input type="email" placeholder="Enter your Email Address" class="input-fields">
-        <br>
+        <input type="email" name="email"
+               placeholder="Enter your Email Address"
+               class="input-fields" required>
+
         <label class="form-labels">Password</label>
-        <br>
-        <input type="password" placeholder="Create Password" class="input-fields">
-        <p id="owo">Use at least 8 Characters</p>
+        <input type="password" name="password"
+               placeholder="Create Password"
+               class="input-fields" required>
+
         <label class="form-labels">Confirm Password</label>
-        <br>
-        <input type="password" placeholder="Re-enter Your Password" class="input-fields">
-        </div>
+        <input type="password" name="confirm_password"
+               placeholder="Re-enter Your Password"
+               class="input-fields" required>
 
-        <div class="terms-of-service">
-            <p>By creating an account, you agree to our <br><a href="terms_of_service.html">Terms of Service</a> and <a href="terms_of_service.html">Privacy Policy</a></p>
-        </div>
+    </div>
 
-        </div>
+    <!-- LANDLORD-ONLY INFORMATION -->
+    <div class="landlord-fields" id="landlordFields" hidden>
 
-        <div class="button-center">
-                <input type="submit" value="Create Account">
-            </div>
+        <hr>
+
+        <h3>Property Registration Information</h3>
+
+        <label class="form-labels">Mayor's Permit Number</label>
+        <input type="text" name="mayor_permit"
+               class="input-fields">
+
+        <label class="form-labels">Business Permit Number</label>
+        <input type="text" name="business_permit"
+               class="input-fields">
+
+        <label class="form-labels">Location of Property</label>
+        <input type="text" name="property_location"
+               class="input-fields">
+
+    </div>
+
+    <div class="terms-of-service">
+        <p>
+            By creating an account, you agree to our
+            <br>
+            <a href="terms_of_service.html">Terms of Service</a>
+            and
+            <a href="terms_of_service.html">Privacy Policy</a>
+        </p>
+    </div>
+
+    <div class="button-center">
+        <input type="submit" value="Create Account">
+    </div>
+
+</form>
 
 
 
