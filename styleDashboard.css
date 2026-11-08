@@ -5,6 +5,7 @@
   font-family: poppins, sans-serif;
 }
 
+/* STRICTLY DO NOT TOUCH THE CODE BELOW THIS LINE */
 /*========================================*/
 
 .header {
@@ -94,6 +95,7 @@
 .first-container {
   border: 1px solid black;
   margin: 25px;
+  margin-bottom: 0;
   width: auto;
   height: 125px;
   display: flex;
@@ -110,4 +112,88 @@
 .first-container-text {
   border: 1px solid black;
   margin-left: 20px;
+}
+
+.button-container {
+  border: 1px solid black;
+  width: auto;
+  height: fit-content;
+  margin: 25px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*========================================*/
+/* HREF ANCHOR TAG PERO NAKA BUTTON SIYA */
+.custom-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+
+  background-color: aqua;
+  color: white;
+  width: 49.5%;
+  height: 35px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+/*========================================*/
+/* HREF ANCHOR TAG PERO NAKA BUTTON SIYA */
+
+.second-container {
+  border: 2px solid black;
+  display: flex;
+}
+.property-detail {
+  border: 1px solid black;
+  margin: 25px;
+  width: 720px;
+  height: auto;
+  display: flex;
+}
+.property-image-container {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+.text-container-inner {
+  border: 1px solid yellow;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.text-container > p {
+  font-size: 12px;
+  padding: 5px;
+}
+#nameBH {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* ======================================================================== */
+
+.second-property-detail {
+  border: 1px solid black;
+  margin: 25px;
+  width: 720px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.another-image-container {
+  display: flex;
+  border: 1px solid blue;
+  width: 100%;
+  justify-content: space-around;
+}
+.another-image-container > .property-image-container {
+  width: 100px;
+  height: 100px;
 }

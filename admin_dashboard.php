@@ -45,5 +45,55 @@
     </div>
 </div>
 
+<div class="button-container">
+    <a href="admin_dashboard.php" class="custom-button">Dashboard</a>
+    <a href="room_management.php" class="custom-button">Room Management</a>
+</div>
+
+<div class="second-container">
+    <div class="property-detail">
+        <div class="property-image-container"></div>
+        <div class="text-container">
+            <p>Property Details</p>
+            <p id="nameBH">Name of Boarding House</p>
+
+            <div class="text-container-inner">
+                <img src="assets/locationpin.png">
+                <p>Talisay City, Negros Occidental</p>
+            </div>
+            <div class="text-container-inner">
+                <img src="assets/phone.png">
+                <p>Phone Number of Boarding House</p>
+            </div>
+            <div><hr></div>
+            <div class="text-container-inner">
+                <p>Description of Boarding House</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-property-detail">
+
+            <div class="text-container">
+                <div class="text-container-inner">
+                    <img src="assets/gallery.png">
+                    <p>Gallery</p>
+                </div>
+            </div>
+
+            <div class="another-image-container">
+                    <div class="property-image-container"></div><div class="property-image-container"></div><div class="property-image-container"></div><div class="property-image-container"></div>
+            </div>
+
+            <div class="text-container"><hr></div>
+
+            <div class="text-container">
+                <p>A glimpse of your boarding house.</p>
+            </div>
+
+
+    </div>
+</div>
+
 </body>
 </html>
