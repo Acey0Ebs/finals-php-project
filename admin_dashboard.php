@@ -90,9 +90,15 @@
             <div class="text-container">
                 <p>A glimpse of your boarding house.</p>
             </div>
-
-
     </div>
+</div>
+
+<div class="final-container">
+    <div class="final-container-left">asdf
+        <div class="up-box">sdgas</div>
+        <div class="up-box">sdgas</div>
+    </div>
+    <div class="final-container-right">asdf</div>
 </div>
 
 </body>

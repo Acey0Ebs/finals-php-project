@@ -197,3 +197,24 @@
   width: 100px;
   height: 100px;
 }
+
+/* ======================================================================== */
+
+.final-container {
+  border: 1px solid purple;
+  display: flex;
+}
+.final-container-left {
+  border: 1px solid purple;
+  width: 50%;
+  height: auto;
+}
+.up-box {
+  border: 1px solid red;
+}
+
+.final-container-right {
+  border: 1px solid purple;
+  width: 90%;
+  height: auto;
+}
